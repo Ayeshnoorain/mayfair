@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - Mayfair Luxe Living{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" style="padding: 150px 0 80px;">
+    <div class="hero-content">
+        <div class="container">
+            <div class="text-center">
+                <h1>Our Portfolio</h1>
+                <p class="lead">Discover our innovative luxury interior designs</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Content -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>Dream Spaces, Real Results</h2>
+            <h3>See how we transform dreams into reality</h3>
+        </div>
+        
+        <!-- Gallery Categories -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="gallery-filters text-center">
+                    <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">All Projects</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="residential">Residential</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="commercial">Commercial</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="villa">Luxury Villas</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="kitchen">Kitchens</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="bathroom">Bathrooms</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="row" id="gallery-grid">
+            <div class="col-lg-4 col-md-6 mb-4" data-category="residential">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image bg-light d-flex align-items-center justify-content-center" style="height: 300px;">
+                            <i class="fas fa-image fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h5>Modern Living Room</h5>
+                        <p>Contemporary luxury with innovative design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-category="kitchen">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image bg-light d-flex align-items-center justify-content-center" style="height: 300px;">
+                            <i class="fas fa-image fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h5>Luxury Kitchen</h5>
+                        <p>State-of-the-art modular kitchen design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-category="villa">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image bg-light d-flex align-items-center justify-content-center" style="height: 300px;">
+                            <i class="fas fa-image fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h5>Luxury Villa Interior</h5>
+                        <p>Opulent villa transformation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-category="bathroom">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image bg-light d-flex align-items-center justify-content-center" style="height: 300px;">
+                            <i class="fas fa-image fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h5>Spa Bathroom</h5>
+                        <p>Luxury bathroom with spa-like features</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-category="commercial">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image bg-light d-flex align-items-center justify-content-center" style="height: 300px;">
+                            <i class="fas fa-image fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h5>Office Space</h5>
+                        <p>Modern commercial interior design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-category="residential">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <div class="placeholder-image bg-light d-flex align-items-center justify-content-center" style="height: 300px;">
+                            <i class="fas fa-image fa-3x text-muted"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h5>Master Bedroom</h5>
+                        <p>Elegant bedroom with luxury finishes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Ready to Create Your Dream Space?</h2>
+            <p class="lead mb-4">Let our fresh talent bring your vision to life with innovative luxury design.</p>
+            <a href="/#consultation" class="btn btn-primary btn-lg">Book A Free Consultation</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.gallery-filters button');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter gallery items
+            galleryItems.forEach(item => {
+                const category = item.parentElement.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    item.parentElement.style.display = 'block';
+                } else {
+                    item.parentElement.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+{% endblock %} 

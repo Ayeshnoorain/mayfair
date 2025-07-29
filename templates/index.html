@@ -1,0 +1,687 @@
+{% extends "base.html" %}
+
+{% block title %}Mayfair Luxe Living - Best Interior Designers | Luxury Interior Design{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-text-content">
+                        <h1 class="hero-main-title">Mayfair<br><span class="luxury-accent">Luxe Living</span></h1>
+                        <div class="hero-divider"></div>
+                        <p class="hero-description">At Mayfair Luxe Living, we believe that great design is more than just beautiful — it's <strong>intentional, mindful, and deeply personal</strong>.</p>
+                        <a href="#consultation" class="btn btn-primary hero-cta">Book A Free Consultation</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="consultation-form" id="consultation">
+                        <h4 class="text-center mb-4">Get Your Free Design Consultation</h4>
+                        <p class="text-center mb-4">Elevate your everyday spaces into <strong>timeless sanctuaries</strong></p>
+                        
+                        <form id="consultationForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" name="phone" placeholder="Phone No" required>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-control" name="project_type" required>
+                                    <option value="">Choose Project</option>
+                                    <option value="2bhk">2 BHK - Starts at $50K*</option>
+                                    <option value="3bhk">3 BHK - Starts at $75K*</option>
+                                    <option value="villa">Villa - Starts at $150K*</option>
+                                    <option value="commercial">Commercial Space</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="project_name" placeholder="Project Name">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Book A Free Consultation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt fa-3x luxury-accent mb-3"></i>
+                    <h5><strong>Lifetime Warranty</strong> on every single product</h5>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="feature-item">
+                    <i class="fas fa-dollar-sign fa-3x luxury-accent mb-3"></i>
+                    <h5>Fixed pricing and <strong>no cost</strong> escalation</h5>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="feature-item">
+                    <i class="fas fa-palette fa-3x luxury-accent mb-3"></i>
+                    <h5>Wide range of <strong>premium finishes</strong></h5>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="feature-item">
+                    <i class="fas fa-crown fa-3x luxury-accent mb-3"></i>
+                    <h5><strong>Luxury Made Easy</strong></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2>WHY CHOOSE<br><span class="luxury-accent">MAYFAIR LUXE LIVING?</span></h2>
+                <p class="lead">We handle everything for your dream home, from design to flawless completion, on time and on budget. Our fresh talent creates unique spaces that reflect your style. Experience luxury redefined - it's about you, not just the price tag.</p>
+                <div class="row mt-4">
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <div class="stat-label">Years of Innovation</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <div class="stat-label">Creative Team</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <div class="stat-label">Finished Projects</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <h3 class="mb-4">Reach out today to discuss your vision!</h3>
+                    <a href="#consultation" class="btn btn-primary btn-lg">Book A Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="process" class="section-wrapper">
+    <div class="section-number">03</div>
+    <div class="container section-content">
+        <div class="text-center mb-5">
+            <div class="brochure-subheading">Our Process</div>
+            <h2 class="brochure-heading">How We Work</h2>
+            <div class="section-divider mx-auto"></div>
+            <p class="brochure-text">Get your dream home in 4 simple steps with our streamlined design process.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h4>Understanding Requirements</h4>
+                    <p>We deeply understand our client's preferences, desires, & dreams to create their dream home.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h4>Space Planning</h4>
+                    <p>We create seamless, functional layouts that uplift, inspire, and reflect your unique style.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h4>Design Intent</h4>
+                    <p>Our fresh design intent brings your vision to life, creating spaces tailored to your needs.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h4>Estimation</h4>
+                    <p>We offer transparent estimates, ensuring clarity & honesty throughout the project journey.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="#consultation" class="btn btn-primary btn-lg">Book A Free Consultation</a>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>What We Offer</h2>
+            <h3>We specialize in a wide range of luxury interior design services.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-door-open fa-2x luxury-accent mb-3"></i>
+                    <h5>Foyers</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-crown fa-2x luxury-accent mb-3"></i>
+                    <h5>False Ceilings</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-bath fa-2x luxury-accent mb-3"></i>
+                    <h5>Bathroom Designs</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-archive fa-2x luxury-accent mb-3"></i>
+                    <h5>Storage Solutions & Wardrobes</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-pray fa-2x luxury-accent mb-3"></i>
+                    <h5>Pooja Units</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-utensils fa-2x luxury-accent mb-3"></i>
+                    <h5>Modular Kitchens</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-tree fa-2x luxury-accent mb-3"></i>
+                    <h5>Outdoor/Balcony Spaces</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-card">
+                    <i class="fas fa-couch fa-2x luxury-accent mb-3"></i>
+                    <h5>Living Spaces & much more</h5>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <p class="lead">We handle everything for your dream home, from design to flawless completion, on time and on budget. Our fresh talent creates unique spaces that reflect your style.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Features Grid -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt fa-2x luxury-accent mb-3"></i>
+                    <h5>Life Time Warranty</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-card">
+                    <i class="fas fa-home fa-2x luxury-accent mb-3"></i>
+                    <h5>Turnkey Solutions</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-card">
+                    <i class="fas fa-clock fa-2x luxury-accent mb-3"></i>
+                    <h5>Timely Delivery</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-card">
+                    <i class="fas fa-lightbulb fa-2x luxury-accent mb-3"></i>
+                    <h5>Original Designs</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section-wrapper">
+    <div class="section-number">01</div>
+    <div class="container section-content">
+        <div class="text-center mb-5">
+            <div class="brochure-subheading">About us</div>
+            <h2 class="brochure-heading">Mayfair Luxe Living</h2>
+            <div class="section-divider mx-auto"></div>
+        </div>
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-12">
+                <div class="brochure-text text-center">
+                    <p class="lead">At Mayfair Luxe Living, we believe that great design is more than just beautiful — it's <strong>intentional, mindful, and deeply personal</strong>. Founded with a vision to elevate everyday spaces into timeless sanctuaries, our studio blends refined aesthetics with purposeful functionality to create interiors that feel as good as they look.</p>
+                    <p>Rooted in our core values of trust, efficiency, good design, and mindful living, we take a thoughtful approach to every project, ensuring that each detail reflects our clients' unique personality and lifestyle.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <div class="about-stats">
+                        <div class="row">
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <span class="stat-number">5+</span>
+                                    <div class="stat-label">Years of Innovation</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <span class="stat-number">50+</span>
+                                    <div class="stat-label">Creative Team</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <span class="stat-number">200+</span>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-item">
+                                    <span class="stat-number">100%</span>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Our Values -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="text-center mb-5">
+                    <h3>Our Values</h3>
+                    <p class="lead">What drives us to create extraordinary spaces</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="brochure-card text-center">
+                            <i class="fas fa-handshake fa-2x luxury-accent mb-3"></i>
+                            <h4>Trust</h4>
+                            <p>Building lasting relationships through transparency, reliability, and honest communication in every project.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="brochure-card text-center">
+                            <i class="fas fa-clock fa-2x luxury-accent mb-3"></i>
+                            <h4>Efficiency</h4>
+                            <p>Streamlined processes and smart solutions that deliver exceptional results on time and within budget.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="brochure-card text-center">
+                            <i class="fas fa-palette fa-2x luxury-accent mb-3"></i>
+                            <h4>Good Design</h4>
+                            <p>Thoughtful, intentional design that balances beauty with functionality to create truly livable spaces.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="brochure-card text-center">
+                            <i class="fas fa-leaf fa-2x luxury-accent mb-3"></i>
+                            <h4>Mindful Living</h4>
+                            <p>Creating spaces that promote well-being, sustainability, and conscious living for a better tomorrow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center mb-5">
+                    <h3>Our Fresh Talent</h3>
+                    <p class="lead">Meet the creative minds behind Mayfair Luxe Living</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card text-center">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-circle fa-5x luxury-accent"></i>
+                            </div>
+                            <h4>Sarah Johnson</h4>
+                            <p class="text-muted">Lead Interior Designer</p>
+                            <p>With a fresh perspective and innovative approach, Sarah brings contemporary luxury to every project.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card text-center">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-circle fa-5x luxury-accent"></i>
+                            </div>
+                            <h4>Michael Chen</h4>
+                            <p class="text-muted">Creative Director</p>
+                            <p>Michael's visionary leadership and fresh ideas drive our innovative approach to luxury interior design.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="team-card text-center">
+                            <div class="team-avatar mb-3">
+                                <i class="fas fa-user-circle fa-5x luxury-accent"></i>
+                            </div>
+                            <h4>Emily Rodriguez</h4>
+                            <p class="text-muted">Project Manager</p>
+                            <p>Emily ensures seamless execution of every project with her attention to detail and fresh problem-solving approach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="section-wrapper">
+    <div class="section-number">02</div>
+    <div class="container section-content">
+        <div class="text-center mb-5">
+            <div class="brochure-subheading">Our Spaces</div>
+            <h2 class="brochure-heading">Design Portfolio</h2>
+            <div class="section-divider mx-auto"></div>
+            <p class="brochure-text">From entryways to living rooms, kitchens to bedrooms - we create spaces that inspire.</p>
+        </div>
+        
+        <!-- Gallery Categories -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="gallery-filters text-center">
+                    <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">All Spaces</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="living">Living Rooms</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="kitchen">Kitchens</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="bedroom">Bedrooms</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="dining">Dining Rooms</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="bathroom">Bathrooms</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="storage">Storage</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Brochure-style Gallery Grid -->
+        <div class="brochure-gallery">
+            <!-- Entryway Designs Section -->
+            <div class="gallery-section mb-5" data-category="entryway">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="gallery-images-grid">
+                            <img src="{{ url_for('static', filename='images/image15.jpeg') }}" alt="Entryway Design 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/image16.jpeg') }}" alt="Entryway Design 2" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="gallery-content">
+                            <div class="section-number-small">01</div>
+                            <h3 class="gallery-title">Entryway Designs</h3>
+                            <p class="gallery-description">The entryway sets the tone for the entire home, combining elegance with everyday function. Inspired by classic European foyers and minimalist traditions, our designs feature statement lighting, refined details, and curated accents to create a warm, inviting first impression.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Living Room Section -->
+            <div class="gallery-section mb-5" data-category="living">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="gallery-images-grid">
+                            <img src="{{ url_for('static', filename='images/image25.jpeg') }}" alt="Living Room 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/image26.jpeg') }}" alt="Living Room 2" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="gallery-content">
+                            <div class="section-number-small">02</div>
+                            <h3 class="gallery-title">Living Room</h3>
+                            <p class="gallery-description">The living room is the heart of the home, a space where comfort meets style and personal expression shines. Our design concepts balance elegance with livability, drawing inspiration from contemporary aesthetics, timeless European charm, and natural textures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kitchen Section -->
+            <div class="gallery-section mb-5" data-category="kitchen">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="gallery-images-grid three-images">
+                            <img src="{{ url_for('static', filename='images/image35.jpeg') }}" alt="Kitchen Design 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/image36.jpeg') }}" alt="Kitchen Design 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/image37.jpeg') }}" alt="Kitchen Design 3" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="gallery-content">
+                            <div class="section-number-small">03</div>
+                            <h3 class="gallery-title">Kitchen</h3>
+                            <div class="kitchen-finishes">
+                                <div class="finish-item">
+                                    <strong>Mica:</strong> Durable and budget-friendly, mica finishes offer a wide range of textures and colors, ideal for everyday use in high-traffic kitchens.
+                                </div>
+                                <div class="finish-item">
+                                    <strong>Acrylic:</strong> Known for its glossy, mirror-like finish, acrylic adds a sleek, modern touch while being easy to clean and maintain.
+                                </div>
+                                <div class="finish-item">
+                                    <strong>Glass:</strong> Glass panels bring elegance and depth, reflecting light to make kitchens feel spacious while enhancing a contemporary aesthetic.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bedroom Section -->
+            <div class="gallery-section mb-5" data-category="bedroom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="gallery-images-grid">
+                            <img src="{{ url_for('static', filename='images/image60.jpeg') }}" alt="Bedroom 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/image61.jpeg') }}" alt="Bedroom 2" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="gallery-content">
+                            <div class="section-number-small">04</div>
+                            <h3 class="gallery-title">Bedroom Essentials</h3>
+                            <p class="gallery-description">A bedroom should be a sanctuary that blends relaxation with personal style. Our design concepts focus on creating tranquil, cozy spaces through thoughtful use of color, lighting, and textures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>Client Testimonials</h2>
+            <h3>Design experiences shared by our happy clients</h3>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Mayfair Luxe Living transformed our home with their fresh, innovative approach. The young team brought such creative energy and new ideas that we never expected. Our living room is now the talk of the neighborhood!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle fa-2x luxury-accent"></i>
+                        </div>
+                        <div class="author-info">
+                            <h5>Sarah & Michael Johnson</h5>
+                            <p class="text-muted">Luxury Villa Project</p>
+                            <div class="rating">
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The team's fresh perspective and innovative ideas exceeded our expectations. They understood our vision perfectly and delivered a kitchen that's both functional and absolutely stunning. Highly recommend!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle fa-2x luxury-accent"></i>
+                        </div>
+                        <div class="author-info">
+                            <h5>David & Lisa Chen</h5>
+                            <p class="text-muted">Modular Kitchen Design</p>
+                            <div class="rating">
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"What impressed us most was their fresh talent and new ideas. They didn't just follow trends - they created something unique for us. The attention to detail and quality is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle fa-2x luxury-accent"></i>
+                        </div>
+                        <div class="author-info">
+                            <h5>Robert & Emma Wilson</h5>
+                            <p class="text-muted">Complete Home Makeover</p>
+                            <div class="rating">
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                                <i class="fas fa-star luxury-accent"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>Contact Us</h2>
+            <h3>Get in touch with our fresh talent for your luxury design project</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mb-5">
+                <h3>Get In Touch</h3>
+                <p class="lead mb-4">Ready to transform your space with our innovative luxury design? Let's discuss your vision.</p>
+                
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control" name="project_type" required>
+                            <option value="">Select Project Type</option>
+                            <option value="residential">Residential Design</option>
+                            <option value="commercial">Commercial Space</option>
+                            <option value="villa">Luxury Villa</option>
+                            <option value="renovation">Renovation</option>
+                            <option value="consultation">General Consultation</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your project and vision..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-map-marker-alt luxury-accent fa-2x mb-2"></i>
+                        <h5>Address</h5>
+                        <p>Magadi Road<br>Bangalore, India</p>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-phone luxury-accent fa-2x mb-2"></i>
+                        <h5>Phone</h5>
+                        <p>+91 799 6339706<br>+91 799 6330369</p>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-envelope luxury-accent fa-2x mb-2"></i>
+                        <h5>Email</h5>
+                        <p>mayfairluxeliving@gmail.com</p>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-instagram luxury-accent fa-2x mb-2"></i>
+                        <h5>Follow Us</h5>
+                        <p><a href="https://www.instagram.com/mayfairluxeliving" target="_blank" class="text-decoration-none">@mayfairluxeliving</a></p>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-clock luxury-accent fa-2x mb-2"></i>
+                        <h5>Business Hours</h5>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: By Appointment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} 
