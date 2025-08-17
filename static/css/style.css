@@ -97,7 +97,7 @@ h3 {
 
 /* Hero Section */
     .hero {
-        background: url('../images/Home Page.jpg');
+        background: url('../images/home-page.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
