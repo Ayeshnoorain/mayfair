@@ -1,164 +1,118 @@
 # Mayfair Luxe Living - Luxury Interior Design Website
 
-A modern, responsive luxury interior design website built with Flask, featuring fresh talent and innovative design approaches.
+A modern, responsive website for Mayfair Luxe Living, showcasing luxury interior design services with a brochure-inspired gallery and elegant design.
 
-## Features
+## 🌟 Features
 
-- **Modern Luxury Design**: Elegant, sophisticated design with gold accents and premium styling
-- **Responsive Layout**: Fully responsive design that works on all devices
-- **Interactive Elements**: Smooth animations, form handling, and dynamic content
-- **Consultation Forms**: Lead generation forms with backend processing
-- **Multiple Pages**: Home, About, Gallery, Process, Testimonials, and Contact pages
-- **Vercel Ready**: Optimized for deployment on Vercel
+- **Single-Page Application** with smooth scrolling navigation
+- **Responsive Design** optimized for all devices
+- **Brochure-Style Gallery** with categorized spaces (Living Areas, Kitchen, Bedroom, etc.)
+- **Interactive Gallery Filters** with smooth transitions
+- **Contact Form** for client inquiries
+- **Modern UI/UX** with luxury aesthetics
+- **Team Section** featuring key personnel
+- **Process Overview** explaining the design workflow
 
-## Technology Stack
+## 🛠️ Tech Stack
 
 - **Backend**: Flask (Python)
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Styling**: Bootstrap 5, Custom CSS
+- **CSS Framework**: Bootstrap 5
 - **Icons**: Font Awesome
 - **Fonts**: Google Fonts (Playfair Display, Inter)
-- **Deployment**: Vercel
+- **Deployment**: Replit-ready
 
-## Project Structure
+## 🚀 Quick Start
+
+### Local Development
+1. Clone the repository
+2. Create a virtual environment: `python -m venv venv`
+3. Activate the environment: `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Mac/Linux)
+4. Install dependencies: `pip install -r requirements.txt`
+5. Run the application: `python app.py`
+6. Open http://localhost:8080 in your browser
+
+### Replit Deployment
+1. Fork this repository to your GitHub account
+2. Go to [Replit](https://replit.com) and create a new project
+3. Choose "Import from GitHub" and select your forked repository
+4. Click "Run" to start the application
+
+## 📁 Project Structure
 
 ```
 mayfair/
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
-├── vercel.json           # Vercel configuration
-├── README.md             # Project documentation
+├── replit.nix           # Replit configuration
+├── .replit              # Replit run command
+├── pyproject.toml       # Python project configuration
+├── static/              # Static assets
+│   ├── css/
+│   │   └── style.css    # Main stylesheet
+│   ├── js/
+│   │   └── main.js      # JavaScript functionality
+│   └── images/          # Gallery and logo images
 ├── templates/            # HTML templates
-│   ├── base.html         # Base template
-│   ├── index.html        # Homepage
-│   ├── about.html        # About page
-│   ├── gallery.html      # Gallery page
-│   ├── process.html      # Process page
-│   ├── testimonials.html # Testimonials page
-│   └── contact.html      # Contact page
-└── static/               # Static assets
-    ├── css/
-    │   └── style.css     # Main stylesheet
-    ├── js/
-    │   └── main.js       # Main JavaScript
-    └── images/           # Image assets
+│   ├── base.html        # Base template with navigation
+│   └── index.html       # Main homepage content
+└── README.md            # Project documentation
 ```
 
-## Installation & Setup
+## 🎨 Design Features
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd mayfair
-   ```
+- **Golden Color Scheme** (#c19334) for luxury branding
+- **Smooth Animations** and transitions throughout
+- **Responsive Gallery** with filterable categories
+- **Professional Typography** using premium fonts
+- **Mobile-First Design** approach
 
-2. **Create and activate virtual environment**
-   ```bash
-   python -m venv venv
-   # On Windows
-   .\venv\Scripts\Activate.ps1
-   # On macOS/Linux
-   source venv/bin/activate
-   ```
+## 📱 Responsive Design
 
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+The website is fully responsive and optimized for:
+- Desktop computers
+- Tablets
+- Mobile phones
+- All modern browsers
 
-4. **Run the application**
-   ```bash
-   python app.py
-   ```
+## 🔧 Configuration
 
-5. **Access the website**
-   Open your browser and go to `http://localhost:5000`
+### Port Configuration
+- **Local Development**: Port 8000
+- **Replit**: Port 8080 (automatically configured)
 
-## Deployment to Vercel
+### Environment Variables
+No environment variables required for basic functionality.
 
-1. **Install Vercel CLI**
-   ```bash
-   npm install -g vercel
-   ```
+## 📞 Contact Form
 
-2. **Deploy to Vercel**
-   ```bash
-   vercel
-   ```
+The contact form includes fields for:
+- First and Last Name
+- Email Address
+- Phone Number
+- Project Type Selection
+- Message/Project Description
 
-3. **Follow the prompts** to connect your GitHub repository and deploy
+## 🚀 Deployment
 
-## Key Features
+### Replit
+- Automatically configured with `replit.nix` and `.replit`
+- Python 3.9 environment with all dependencies
+- Ready to run with one click
 
-### Homepage
-- Hero section with consultation form
-- Features showcase
-- Statistics and achievements
-- Process overview
-- Services grid
-- About section
+### Other Platforms
+- **Vercel**: Use `vercel.json` configuration
+- **Heroku**: Add `Procfile` with `web: gunicorn app:app`
+- **Traditional Hosting**: Upload files and run with gunicorn
 
-### About Page
-- Company story and values
-- Team showcase
-- Statistics
-- Why choose us section
+## 📝 License
 
-### Gallery Page
-- Filterable project gallery
-- Category-based filtering
-- Project showcases
+This project is proprietary to Mayfair Luxe Living.
 
-### Process Page
-- Detailed 4-step process
-- Process benefits
-- Call-to-action sections
+## 🤝 Support
 
-### Testimonials Page
-- Client testimonials with ratings
-- Featured awards and recognition
-- Social proof elements
+For technical support or questions about the website, please contact the development team.
 
-### Contact Page
-- Contact form
-- Contact information
-- FAQ section
-- Map placeholder
+---
 
-## Customization
-
-### Colors
-The main luxury accent color is `#c4a661` (gold). You can modify this in `static/css/style.css` by changing the `.luxury-accent` class.
-
-### Content
-Update the content in the HTML templates to match your business information, services, and branding.
-
-### Images
-Replace placeholder images in the gallery and other sections with actual project photos.
-
-## Form Handling
-
-The website includes consultation forms that send data to the backend. Currently, the forms return a success message. To implement actual email sending or database storage, modify the `/submit_consultation` route in `app.py`.
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
-
-## Performance
-
-- Optimized CSS and JavaScript
-- Responsive images
-- Fast loading times
-- SEO-friendly structure
-
-## License
-
-This project is created for Mayfair Luxe Living. All rights reserved.
-
-## Support
-
-For support or questions, contact the development team or refer to the documentation. 
+**Mayfair Luxe Living** - Creating extraordinary spaces with fresh talent and innovative ideas. 
