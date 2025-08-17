@@ -76,27 +76,78 @@ document.addEventListener('DOMContentLoaded', function() {
     handleFormSubmission('consultationForm');
     handleFormSubmission('contactForm');
 
-    // Gallery filtering
+    // Gallery filtering and scrolling
     const filterButtons = document.querySelectorAll('.gallery-filters button');
-    const galleryItems = document.querySelectorAll('#gallery-grid [data-category]');
+    const gallerySections = document.querySelectorAll('.gallery-section');
     
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
             const filter = this.getAttribute('data-filter');
             
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Update active button styling
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.remove('btn-primary');
+                btn.classList.add('btn-outline-primary');
+            });
+            this.classList.remove('btn-outline-primary');
+            this.classList.add('btn-primary');
             this.classList.add('active');
             
-            // Filter gallery items
-            galleryItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
+            if (filter === 'all') {
+                // Show all sections with smooth transition
+                gallerySections.forEach((section, index) => {
+                    setTimeout(() => {
+                        section.style.display = 'block';
+                        section.style.opacity = '0';
+                        section.style.transform = 'translateY(30px) scale(0.95)';
+                        
+                        // Trigger reflow
+                        section.offsetHeight;
+                        
+                        section.style.opacity = '1';
+                        section.style.transform = 'translateY(0) scale(1)';
+                    }, index * 100);
+                });
+                
+                // Scroll to gallery section
+                document.getElementById('gallery').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            } else {
+                // Hide all sections with fade out
+                gallerySections.forEach(section => {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(30px) scale(0.95)';
+                    
+                    setTimeout(() => {
+                        section.style.display = 'none';
+                    }, 300);
+                });
+                
+                // Show only the selected category with smooth fade in
+                const targetSection = document.querySelector(`[data-category="${filter}"]`);
+                if (targetSection) {
+                    setTimeout(() => {
+                        targetSection.style.display = 'block';
+                        targetSection.style.opacity = '0';
+                        targetSection.style.transform = 'translateY(30px) scale(0.95)';
+                        
+                        // Trigger reflow
+                        targetSection.offsetHeight;
+                        
+                        targetSection.style.opacity = '1';
+                        targetSection.style.transform = 'translateY(0) scale(1)';
+                        
+                        // Scroll to the specific section
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }, 350);
                 }
-            });
+            }
         });
     });
 

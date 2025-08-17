@@ -5,134 +5,60 @@
 {% block content %}
 <!-- Hero Section -->
 <section id="home" class="hero">
-    <div class="hero-content">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-text-content">
-                        <h1 class="hero-main-title">Mayfair<br><span class="luxury-accent">Luxe Living</span></h1>
-                        <div class="hero-divider"></div>
-                        <p class="hero-description">At Mayfair Luxe Living, we believe that great design is more than just beautiful — it's <strong>intentional, mindful, and deeply personal</strong>.</p>
-                        <a href="#consultation" class="btn btn-primary hero-cta">Book A Free Consultation</a>
-                    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-text-content">
+            <h1 class="hero-main-title">Mayfair<br><span class="luxury-accent">Luxe Living</span></h1>
+            <div class="hero-divider"></div>
+            <p class="tagline">Elevating everyday spaces into timeless sanctuaries</p>
+            <p class="description">At Mayfair Luxe Living, we believe that great design is more than just beautiful — it's <strong>intentional, mindful, and deeply personal</strong>.</p>
+            <a href="#consultation" class="cta-button">Book A Free Consultation</a>
+        </div>
+    </div>
+    
+    <!-- Consultation Form Overlay -->
+    <div class="consultation-form-overlay">
+        <div class="consultation-form">
+            <h2>Get Your Free Design Consultation</h2>
+            <p class="form-subtitle">Elevate your everyday spaces into <strong>timeless sanctuaries</strong></p>
+            
+            <form id="consultationForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="name" placeholder="Name" required>
                 </div>
-                <div class="col-lg-6">
-                    <div class="consultation-form" id="consultation">
-                        <h4 class="text-center mb-4">Get Your Free Design Consultation</h4>
-                        <p class="text-center mb-4">Elevate your everyday spaces into <strong>timeless sanctuaries</strong></p>
-                        
-                        <form id="consultationForm">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" name="phone" placeholder="Phone No" required>
-                            </div>
-                            <div class="mb-3">
-                                <select class="form-control" name="project_type" required>
-                                    <option value="">Choose Project</option>
-                                    <option value="2bhk">2 BHK - Starts at $50K*</option>
-                                    <option value="3bhk">3 BHK - Starts at $75K*</option>
-                                    <option value="villa">Villa - Starts at $150K*</option>
-                                    <option value="commercial">Commercial Space</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" name="project_name" placeholder="Project Name">
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Book A Free Consultation</button>
-                        </form>
-                    </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
-            </div>
+                <div class="mb-3">
+                    <input type="tel" class="form-control" name="phone" placeholder="Phone No" required>
+                </div>
+                <div class="mb-3">
+                    <select class="form-control" name="project_type" required>
+                        <option value="">Choose Project</option>
+                        <option value="2bhk">2 BHK - Starts at $50K*</option>
+                        <option value="3bhk">3 BHK - Starts at $75K*</option>
+                        <option value="villa">Villa - Starts at $150K*</option>
+                        <option value="commercial">Commercial Space</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="project_name" placeholder="Project Name">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Book A Free Consultation</button>
+            </form>
         </div>
     </div>
 </section>
 
-<!-- Features Section -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-3 mb-4">
-                <div class="feature-item">
-                    <i class="fas fa-shield-alt fa-3x luxury-accent mb-3"></i>
-                    <h5><strong>Lifetime Warranty</strong> on every single product</h5>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="feature-item">
-                    <i class="fas fa-dollar-sign fa-3x luxury-accent mb-3"></i>
-                    <h5>Fixed pricing and <strong>no cost</strong> escalation</h5>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="feature-item">
-                    <i class="fas fa-palette fa-3x luxury-accent mb-3"></i>
-                    <h5>Wide range of <strong>premium finishes</strong></h5>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="feature-item">
-                    <i class="fas fa-crown fa-3x luxury-accent mb-3"></i>
-                    <h5><strong>Luxury Made Easy</strong></h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Why Choose Us Section -->
-<section class="py-5">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <h2>WHY CHOOSE<br><span class="luxury-accent">MAYFAIR LUXE LIVING?</span></h2>
-                <p class="lead">We handle everything for your dream home, from design to flawless completion, on time and on budget. Our fresh talent creates unique spaces that reflect your style. Experience luxury redefined - it's about you, not just the price tag.</p>
-                <div class="row mt-4">
-                    <div class="col-6">
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <div class="stat-label">Years of Innovation</div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <div class="stat-label">Creative Team</div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="stat-item">
-                            <span class="stat-number">200+</span>
-                            <div class="stat-label">Finished Projects</div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="stat-item">
-                            <span class="stat-number">200+</span>
-                            <div class="stat-label">Happy Clients</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="text-center">
-                    <h3 class="mb-4">Reach out today to discuss your vision!</h3>
-                    <a href="#consultation" class="btn btn-primary btn-lg">Book A Free Consultation</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+
 
 <!-- How It Works Section -->
 <section id="process" class="section-wrapper">
-    <div class="section-number">03</div>
+    <div class="section-number">02</div>
     <div class="container section-content">
-        <div class="text-center mb-5">
+        <div class="text-center mb-4">
             <div class="brochure-subheading">Our Process</div>
             <h2 class="brochure-heading">How We Work</h2>
             <div class="section-divider mx-auto"></div>
@@ -168,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center mt-5">
+        <div class="text-center mt-4">
             <a href="#consultation" class="btn btn-primary btn-lg">Book A Free Consultation</a>
         </div>
     </div>
@@ -177,7 +103,7 @@
 <!-- Services Section -->
 <section class="services-section">
     <div class="container">
-        <div class="text-center mb-5">
+        <div class="text-center mb-4">
             <h2>What We Offer</h2>
             <h3>We specialize in a wide range of luxury interior design services.</h3>
         </div>
@@ -237,37 +163,7 @@
     </div>
 </section>
 
-<!-- Features Grid -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-shield-alt fa-2x luxury-accent mb-3"></i>
-                    <h5>Life Time Warranty</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-home fa-2x luxury-accent mb-3"></i>
-                    <h5>Turnkey Solutions</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-clock fa-2x luxury-accent mb-3"></i>
-                    <h5>Timely Delivery</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="feature-card">
-                    <i class="fas fa-lightbulb fa-2x luxury-accent mb-3"></i>
-                    <h5>Original Designs</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- About Section -->
 <section id="about" class="section-wrapper">
@@ -285,29 +181,29 @@
                     <p>Rooted in our core values of trust, efficiency, good design, and mindful living, we take a thoughtful approach to every project, ensuring that each detail reflects our clients' unique personality and lifestyle.</p>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-12">
                 <div class="text-center">
                     <div class="about-stats">
-                        <div class="row">
-                            <div class="col-6 mb-4">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 col-md-6 mb-3">
                                 <div class="stat-item">
                                     <span class="stat-number">5+</span>
                                     <div class="stat-label">Years of Innovation</div>
                                 </div>
                             </div>
-                            <div class="col-6 mb-4">
+                            <div class="col-lg-3 col-md-6 mb-3">
                                 <div class="stat-item">
                                     <span class="stat-number">50+</span>
                                     <div class="stat-label">Creative Team</div>
                                 </div>
                             </div>
-                            <div class="col-6 mb-4">
+                            <div class="col-lg-3 col-md-6 mb-3">
                                 <div class="stat-item">
                                     <span class="stat-number">200+</span>
                                     <div class="stat-label">Projects Completed</div>
                                 </div>
                             </div>
-                            <div class="col-6 mb-4">
+                            <div class="col-lg-3 col-md-6 mb-3">
                                 <div class="stat-item">
                                     <span class="stat-number">100%</span>
                                     <div class="stat-label">Client Satisfaction</div>
@@ -370,21 +266,21 @@
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="team-card text-center">
                             <div class="team-avatar mb-3">
-                                <i class="fas fa-user-circle fa-5x luxury-accent"></i>
+                                <i class="fas fa-crown fa-5x luxury-accent"></i>
                             </div>
-                            <h4>Sarah Johnson</h4>
-                            <p class="text-muted">Lead Interior Designer</p>
-                            <p>With a fresh perspective and innovative approach, Sarah brings contemporary luxury to every project.</p>
+                            <h4>Faizan Jameel Rizwan</h4>
+                            <p class="text-muted">Owner & Mastermind</p>
+                            <p>The visionary owner and mastermind behind all projects. Faizan's innovative approach and fresh talent drive every design to create extraordinary spaces.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="team-card text-center">
                             <div class="team-avatar mb-3">
-                                <i class="fas fa-user-circle fa-5x luxury-accent"></i>
+                                <i class="fas fa-drafting-compass fa-5x luxury-accent"></i>
                             </div>
                             <h4>Michael Chen</h4>
-                            <p class="text-muted">Creative Director</p>
-                            <p>Michael's visionary leadership and fresh ideas drive our innovative approach to luxury interior design.</p>
+                            <p class="text-muted">Lead Architect</p>
+                            <p>Michael's architectural expertise and fresh ideas drive our innovative approach to luxury interior design and space planning.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
@@ -405,7 +301,7 @@
 
 <!-- Gallery Section -->
 <section id="gallery" class="section-wrapper">
-    <div class="section-number">02</div>
+    <div class="section-number">03</div>
     <div class="container section-content">
         <div class="text-center mb-5">
             <div class="brochure-subheading">Our Spaces</div>
@@ -419,100 +315,156 @@
             <div class="col-12">
                 <div class="gallery-filters text-center">
                     <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">All Spaces</button>
-                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="living">Living Rooms</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="living">Living Areas</button>
                     <button class="btn btn-outline-primary me-2 mb-2" data-filter="kitchen">Kitchens</button>
                     <button class="btn btn-outline-primary me-2 mb-2" data-filter="bedroom">Bedrooms</button>
-                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="dining">Dining Rooms</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="dining">Dining Areas</button>
                     <button class="btn btn-outline-primary me-2 mb-2" data-filter="bathroom">Bathrooms</button>
                     <button class="btn btn-outline-primary me-2 mb-2" data-filter="storage">Storage</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="outdoor">Outdoor</button>
                 </div>
             </div>
         </div>
         
         <!-- Brochure-style Gallery Grid -->
         <div class="brochure-gallery">
-            <!-- Entryway Designs Section -->
-            <div class="gallery-section mb-5" data-category="entryway">
+            <!-- Living Area Section -->
+            <div class="gallery-section mb-4" data-category="living">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="gallery-images-grid">
-                            <img src="{{ url_for('static', filename='images/image15.jpeg') }}" alt="Entryway Design 1" class="gallery-img">
-                            <img src="{{ url_for('static', filename='images/image16.jpeg') }}" alt="Entryway Design 2" class="gallery-img">
+                        <div class="gallery-images-grid three-images">
+                            <img src="{{ url_for('static', filename='images/Living Area 1.jpeg') }}" alt="Living Area 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Living Area 2.jpeg') }}" alt="Living Area 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Living Area 3.jpeg') }}" alt="Living Area 3" class="gallery-img">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="gallery-content">
                             <div class="section-number-small">01</div>
-                            <h3 class="gallery-title">Entryway Designs</h3>
-                            <p class="gallery-description">The entryway sets the tone for the entire home, combining elegance with everyday function. Inspired by classic European foyers and minimalist traditions, our designs feature statement lighting, refined details, and curated accents to create a warm, inviting first impression.</p>
+                            <h3 class="gallery-title">Living Areas</h3>
+                            <p class="gallery-description">The living area is the heart of the home, a space where comfort meets style and personal expression shines. Our design concepts balance elegance with livability, drawing inspiration from contemporary aesthetics, timeless European charm, and natural textures.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Living Room Section -->
-            <div class="gallery-section mb-5" data-category="living">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 order-lg-2">
-                        <div class="gallery-images-grid">
-                            <img src="{{ url_for('static', filename='images/image25.jpeg') }}" alt="Living Room 1" class="gallery-img">
-                            <img src="{{ url_for('static', filename='images/image26.jpeg') }}" alt="Living Room 2" class="gallery-img">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <div class="gallery-content">
-                            <div class="section-number-small">02</div>
-                            <h3 class="gallery-title">Living Room</h3>
-                            <p class="gallery-description">The living room is the heart of the home, a space where comfort meets style and personal expression shines. Our design concepts balance elegance with livability, drawing inspiration from contemporary aesthetics, timeless European charm, and natural textures.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Kitchen Section -->
-            <div class="gallery-section mb-5" data-category="kitchen">
+            <div class="gallery-section mb-4" data-category="kitchen">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="gallery-images-grid three-images">
-                            <img src="{{ url_for('static', filename='images/image35.jpeg') }}" alt="Kitchen Design 1" class="gallery-img">
-                            <img src="{{ url_for('static', filename='images/image36.jpeg') }}" alt="Kitchen Design 2" class="gallery-img">
-                            <img src="{{ url_for('static', filename='images/image37.jpeg') }}" alt="Kitchen Design 3" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Kitchen 1.jpeg') }}" alt="Kitchen Design 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Kitchen 2.jpeg') }}" alt="Kitchen Design 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Kitchen 3.jpeg') }}" alt="Kitchen Design 3" class="gallery-img">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="gallery-content">
-                            <div class="section-number-small">03</div>
+                            <div class="section-number-small">02</div>
                             <h3 class="gallery-title">Kitchen</h3>
-                            <div class="kitchen-finishes">
-                                <div class="finish-item">
-                                    <strong>Mica:</strong> Durable and budget-friendly, mica finishes offer a wide range of textures and colors, ideal for everyday use in high-traffic kitchens.
-                                </div>
-                                <div class="finish-item">
-                                    <strong>Acrylic:</strong> Known for its glossy, mirror-like finish, acrylic adds a sleek, modern touch while being easy to clean and maintain.
-                                </div>
-                                <div class="finish-item">
-                                    <strong>Glass:</strong> Glass panels bring elegance and depth, reflecting light to make kitchens feel spacious while enhancing a contemporary aesthetic.
-                                </div>
-                            </div>
+                            <p class="gallery-description">The kitchen is the heart of the home, where functionality meets style. Our kitchen designs blend modern aesthetics with practical solutions, creating spaces that inspire culinary creativity while maintaining the elegance that defines luxury living.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Bedroom Section -->
-            <div class="gallery-section mb-5" data-category="bedroom">
+            <div class="gallery-section mb-4" data-category="bedroom">
                 <div class="row align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="gallery-images-grid">
-                            <img src="{{ url_for('static', filename='images/image60.jpeg') }}" alt="Bedroom 1" class="gallery-img">
-                            <img src="{{ url_for('static', filename='images/image61.jpeg') }}" alt="Bedroom 2" class="gallery-img">
+                        <div class="gallery-images-grid three-images">
+                            <img src="{{ url_for('static', filename='images/Bedroom 1.jpeg') }}" alt="Bedroom 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Bedroom 2.jpeg') }}" alt="Bedroom 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Bedroom 3.jpeg') }}" alt="Bedroom 3" class="gallery-img">
                         </div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="gallery-content">
-                            <div class="section-number-small">04</div>
+                            <div class="section-number-small">03</div>
                             <h3 class="gallery-title">Bedroom Essentials</h3>
                             <p class="gallery-description">A bedroom should be a sanctuary that blends relaxation with personal style. Our design concepts focus on creating tranquil, cozy spaces through thoughtful use of color, lighting, and textures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dining Room Section -->
+            <div class="gallery-section mb-4" data-category="dining">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="gallery-images-grid three-images">
+                            <img src="{{ url_for('static', filename='images/Dining Area1.jpeg') }}" alt="Dining Area 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Dinning Area 2.jpeg') }}" alt="Dining Area 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Dining area 3.jpeg') }}" alt="Dining Area 3" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="gallery-content">
+                            <div class="section-number-small">04</div>
+                            <h3 class="gallery-title">Dining Areas</h3>
+                            <p class="gallery-description">Dine in style with designs that balance comfort and elegance. From minimalist modern to cozy rustic, our dining room concepts create inviting spaces perfect for every meal and gathering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bathroom Section -->
+            <div class="gallery-section mb-4" data-category="bathroom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="gallery-images-grid three-images">
+                            <img src="{{ url_for('static', filename='images/Bathroom 1.jpeg') }}" alt="Bathroom 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Bathroom 2.jpeg') }}" alt="Bathroom 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Bathroom 3.jpeg') }}" alt="Bathroom 3" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="gallery-content">
+                            <div class="section-number-small">05</div>
+                            <h3 class="gallery-title">Bathroom</h3>
+                            <p class="gallery-description">Transform your bathroom into a luxurious retreat with our innovative designs. We focus on creating functional yet elegant spaces that combine modern aesthetics with timeless comfort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Storage & Office Section -->
+            <div class="gallery-section mb-4" data-category="storage">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="gallery-images-grid three-images">
+                            <img src="{{ url_for('static', filename='images/Storage 1.jpeg') }}" alt="Storage 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Storage 2.jpeg') }}" alt="Storage 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Storage 3.jpeg') }}" alt="Storage 3" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="gallery-content">
+                            <div class="section-number-small">06</div>
+                            <h3 class="gallery-title">Storage & Office Spaces</h3>
+                            <p class="gallery-description">Maximize every inch with smart, stylish storage solutions that keep your space clutter-free. Our designs blend functionality and aesthetics for seamless organization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Outdoor & Special Areas Section -->
+            <div class="gallery-section mb-4" data-category="outdoor">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="gallery-images-grid three-images">
+                            <img src="{{ url_for('static', filename='images/Outdoor 1.jpeg') }}" alt="Outdoor 1" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Outdoor 2.jpeg') }}" alt="Outdoor 2" class="gallery-img">
+                            <img src="{{ url_for('static', filename='images/Outdoor 3.jpeg') }}" alt="Outdoor 3" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="gallery-content">
+                            <div class="section-number-small">07</div>
+                            <h3 class="gallery-title">Outdoor & Special Areas</h3>
+                            <p class="gallery-description">Transform your outdoor areas into relaxing retreats with seating and lounge designs that combine comfort, durability, and style. We create inviting spaces that extend your living area outdoors.</p>
                         </div>
                     </div>
                 </div>
@@ -606,14 +558,14 @@
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-5">
+<section id="contact" class="py-4">
     <div class="container">
         <div class="text-center mb-5">
             <h2>Contact Us</h2>
             <h3>Get in touch with our fresh talent for your luxury design project</h3>
         </div>
-        <div class="row">
-            <div class="col-lg-8 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
                 <h3>Get In Touch</h3>
                 <p class="lead mb-4">Ready to transform your space with our innovative luxury design? Let's discuss your vision.</p>
                 
@@ -649,37 +601,6 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
                 </form>
-            </div>
-            
-            <div class="col-lg-4">
-                <div class="contact-info">
-                    <h4>Contact Information</h4>
-                    <div class="contact-item mb-4">
-                        <i class="fas fa-map-marker-alt luxury-accent fa-2x mb-2"></i>
-                        <h5>Address</h5>
-                        <p>Magadi Road<br>Bangalore, India</p>
-                    </div>
-                    <div class="contact-item mb-4">
-                        <i class="fas fa-phone luxury-accent fa-2x mb-2"></i>
-                        <h5>Phone</h5>
-                        <p>+91 799 6339706<br>+91 799 6330369</p>
-                    </div>
-                    <div class="contact-item mb-4">
-                        <i class="fas fa-envelope luxury-accent fa-2x mb-2"></i>
-                        <h5>Email</h5>
-                        <p>mayfairluxeliving@gmail.com</p>
-                    </div>
-                    <div class="contact-item mb-4">
-                        <i class="fas fa-instagram luxury-accent fa-2x mb-2"></i>
-                        <h5>Follow Us</h5>
-                        <p><a href="https://www.instagram.com/mayfairluxeliving" target="_blank" class="text-decoration-none">@mayfairluxeliving</a></p>
-                    </div>
-                    <div class="contact-item mb-4">
-                        <i class="fas fa-clock luxury-accent fa-2x mb-2"></i>
-                        <h5>Business Hours</h5>
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: By Appointment</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
