@@ -44,10 +44,8 @@ A modern, responsive website for Mayfair Luxe Living, showcasing luxury interior
 mayfair/
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
-├── replit.nix           # Replit configuration
-├── .replit              # Replit run command
-├── pyproject.toml       # Python project configuration
-├── static/              # Static assets
+├── vercel.json           # Vercel deployment configuration
+├── static/               # Static assets
 │   ├── css/
 │   │   └── style.css    # Main stylesheet
 │   ├── js/
@@ -95,13 +93,25 @@ The contact form includes fields for:
 
 ## 🚀 Deployment
 
-### Replit
-- Automatically configured with `replit.nix` and `.replit`
-- Python 3.9 environment with all dependencies
-- Ready to run with one click
+### Vercel (Recommended)
+- **Automatic deployment** from GitHub
+- **Global CDN** for fast loading worldwide
+- **Free hosting** with generous limits
+- **Zero configuration** needed
+
+#### Quick Deploy Steps:
+1. **Install Vercel CLI**: `npm i -g vercel`
+2. **Deploy**: `vercel` (in project directory)
+3. **Follow prompts** to connect GitHub
+4. **Automatic deployments** on every push
+
+#### Alternative: GitHub Integration
+1. Go to [vercel.com](https://vercel.com)
+2. Click "New Project"
+3. Import your GitHub repository
+4. Vercel auto-detects Flask and deploys
 
 ### Other Platforms
-- **Vercel**: Use `vercel.json` configuration
 - **Heroku**: Add `Procfile` with `web: gunicorn app:app`
 - **Traditional Hosting**: Upload files and run with gunicorn
 
