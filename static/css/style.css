@@ -48,7 +48,7 @@ h3 {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     transition: all 0.3s ease;
 }
 
@@ -68,7 +68,7 @@ h3 {
 }
 
 .brand-text .luxury-accent {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 900;
     color: #c19334;
 }
@@ -76,7 +76,7 @@ h3 {
 .navbar-brand img {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s ease;
-    height: 100px;
+    height: 70px;
     width: auto;
 }
 
@@ -102,7 +102,7 @@ h3 {
         background-position: center;
         background-repeat: no-repeat;
         color: white;
-        padding: 120px 0 60px;
+        padding: 80px 0 60px;
         text-align: center;
         position: relative;
         overflow: hidden;
@@ -275,10 +275,10 @@ h3 {
 
     .consultation-form-overlay {
         position: absolute;
-        top: 50px;
+        top: 30px;
         right: 60px;
         z-index: 2;
-        max-height: calc(100vh - 100px);
+        max-height: calc(100vh - 120px);
         overflow-y: auto;
     }
 
