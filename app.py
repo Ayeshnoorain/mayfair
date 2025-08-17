@@ -15,5 +15,4 @@ def submit_consultation():
     return jsonify({'success': True, 'message': 'Thank you! We will contact you soon.'})
 
 if __name__ == '__main__':
-    # Replit-compatible configuration
-    app.run(debug=True, host='0.0.0.0', port=8080) 
+    app.run(host="0.0.0.0", port=8000, debug=True) 
