@@ -107,6 +107,7 @@ h3 {
         position: relative;
         overflow: hidden;
         min-height: 100vh;
+        /* Force Vercel redeploy */
     }
 
     .hero-content {
