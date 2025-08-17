@@ -68,7 +68,7 @@ h3 {
 }
 
 .brand-text .luxury-accent {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 900;
     color: #c19334;
 }
@@ -276,13 +276,13 @@ h3 {
     }
 
     .consultation-form-overlay {
-        position: absolute;
-        top: 30px;
-        right: 60px;
-        z-index: 2;
-        max-height: calc(100vh - 120px);
-        overflow: visible;
-    }
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    z-index: 2;
+    max-height: calc(100vh - 120px);
+    overflow: visible;
+}
 
 .hero::before {
     content: '';
