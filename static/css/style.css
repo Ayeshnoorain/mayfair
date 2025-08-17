@@ -187,11 +187,12 @@ h3 {
     .consultation-form .form-control {
         border: 2px solid #e9ecef;
         border-radius: 8px;
-        padding: 12px 16px;
+        padding: 10px 14px;
         font-size: 1rem;
         transition: all 0.3s ease;
         background: white;
         color: #333;
+        margin-bottom: 15px;
     }
 
     .consultation-form .form-control:focus {
@@ -207,8 +208,8 @@ h3 {
     .consultation-form .btn-primary {
         background: #c19334;
         border: none;
-        padding: 15px 30px;
-        font-size: 1.1rem;
+        padding: 12px 25px;
+        font-size: 1rem;
         font-weight: 600;
         border-radius: 8px;
         transition: all 0.3s ease;
@@ -267,10 +268,11 @@ h3 {
 
     .hero-text-content {
         position: relative;
-        z-index: 2;
+        z-index: 3;
         max-width: 600px;
         margin: 0 auto;
         text-align: left;
+        margin-right: 450px;
     }
 
     .consultation-form-overlay {
@@ -279,7 +281,7 @@ h3 {
         right: 60px;
         z-index: 2;
         max-height: calc(100vh - 120px);
-        overflow-y: auto;
+        overflow: visible;
     }
 
 .hero::before {
@@ -352,13 +354,13 @@ h3 {
 .consultation-form {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     margin-top: 0;
     border: 1px solid rgba(193, 147, 52, 0.2);
     color: #333;
-    max-width: 400px;
+    max-width: 380px;
     width: 100%;
 }
 
